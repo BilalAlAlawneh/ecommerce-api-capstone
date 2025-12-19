@@ -7,8 +7,8 @@ header
     height: 10vh;
 
     padding: 5px 15px;
-    border-bottom: solid 1px #00ff41;
-    box-shadow: 5px 2px #00ff41;
+    border-bottom: solid 1px #ff7a00;
+    box-shadow: 5px 2px #ff7a00;
     background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
 }
 
@@ -37,7 +37,10 @@ header a {
 }
 
 header a:hover {
-    color: #00ff41;
+    color: #ff7a00;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px rgba(255, 140, 0, 0.8);
+     transition: all 0.2s ease-in-out;
 }
 
 header {
@@ -51,7 +54,12 @@ header .cart
     padding-right: 10px;
     cursor: pointer;
 }
-
+header .cart:hover {
+    color: #ff7a00;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px rgba(255, 140, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+}
 header .cart #cart-items
 {
     font-size: .7em;
@@ -132,8 +140,7 @@ main > .content-form .cart-item
     flex-direction: column;
 
     justify-content: space-between;
-    /*width: 30%;*/
-    border: solid 1px #ccc;
+    border: solid 3px #ff7a00;
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -148,13 +155,13 @@ main > .content-form .cart-item
 {
     width: 33%;
     cursor: pointer;
-    border: solid 1px #ccc;
+    border: none;
 }
 
 .product .price
 {
     font-weight: 900;
-    color: #00ff41;
+    color: #ff7a00;
 }
 
 .modal-body img
@@ -213,4 +220,18 @@ main > .content-form .cart-item
 {
     margin-bottom: 2px !important;
 }
+.btn-success {
+    background-color: #ff7a00;
+    border-color: #ff7a00;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #e66f00;
+    border-color: #e66f00;
+    transform: scale(1.05);
+    text-shadow: 0 0 6px rgba(255, 140, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+}
+
 
