@@ -176,10 +176,12 @@ class ShoppingCartService {
     updateCartDisplay()
     {
         try {
-            const itemCount = this.cart.items.length;
-            const cartControl = document.getElementById("cart-items")
-
-            cartControl.innerText = itemCount;
+            const cartControl = document.getElementById("cart-items");
+                    let totalQuantity = 0;
+                    this.cart.items.forEach(item => {
+                        totalQuantity += item.quantity;
+                    });
+                    cartControl.innerText = totalQuantity;
         }
         catch (e) {
 
